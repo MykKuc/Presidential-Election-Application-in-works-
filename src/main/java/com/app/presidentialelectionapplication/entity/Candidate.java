@@ -10,13 +10,13 @@ public class Candidate {
     @Column(name="list_number")
     private int listNumber;
     @Column(name="full_name")
-    private int fullName;
+    private String fullName;
     @Column(name="agenda")
-    private int agenda;
+    private String agenda;
 
     public Candidate(){}
 
-    public Candidate(int fullName, int agenda) {
+    public Candidate(String fullName, String agenda) {
         this.fullName = fullName;
         this.agenda = agenda;
     }
@@ -26,11 +26,11 @@ public class Candidate {
         return listNumber;
     }
 
-    public int getFullName() {
+    public String getFullName() {
         return fullName;
     }
 
-    public int getAgenda() {
+    public String getAgenda() {
         return agenda;
     }
 
