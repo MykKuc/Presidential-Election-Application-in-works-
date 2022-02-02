@@ -7,12 +7,12 @@ import javax.persistence.*;
 public class Voter {
     @Id
     @GeneratedValue
-    @Column(name="id")
+    @Column(name="id",updatable = false)
     private int id;
-    @Column(name="region")
+    @Column(name="region",updatable = false)
     private String region;
     @Column(name="vote")
-    private String vote;
+    public String vote;
 
     public Voter(){}
 
