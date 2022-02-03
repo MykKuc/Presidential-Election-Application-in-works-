@@ -19,6 +19,7 @@ public class VotingServiceImplementation implements VotingService {
 
     @Override
     public void save(Voter theVoter) {
+       
         if (voter.vote != null){
             System.out.println("You can not change your vote.");
         }else {
